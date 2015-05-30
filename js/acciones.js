@@ -84,6 +84,6 @@ $('#calcular').on ('tap', function(e){
 		
 });
 
-});//ready
+});
 });
 });
