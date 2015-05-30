@@ -1,16 +1,20 @@
 //JavaScript Document
 $(document).ready(function(e) {
 document.addEventListener("deviceready",function(){
+	
+  $ ('#btn_conti') .on ('tap' , function () { 
+    navigator .vibrate (100);
+ });
 
   $ ('#calcular') .on ('tap' , function () { 
-    navigator .notification .beep(1);
+    navigator .vibrate (100);
  });
   $ ('#btn_inicio') .on ('tap' , function () { 
-    navigator .vibrate (1000);
+    navigator .vibrate (100);
  });
  
   $ ('#btn_comenzar') .on ('tap' , function () { 
-    navigator .vibrate (1000);
+    navigator .vibrate (100);
  });
 	
 	
@@ -84,6 +88,6 @@ $('#calcular').on ('tap', function(e){
 		
 });
 
-});
+});//ready
 });
 });
