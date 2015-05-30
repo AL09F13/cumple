@@ -1,13 +1,9 @@
 //JavaScript Document
 $(document).ready(function(e) {
 document.addEventListener("deviceready",function(){
-	
-  $ ('#btn_conti') .on ('tap' , function () { 
-    navigator .vibrate (1000);
- });
 
   $ ('#calcular') .on ('tap' , function () { 
-    navigator .vibrate (1000);
+    navigator .notification .beep(1);
  });
   $ ('#btn_inicio') .on ('tap' , function () { 
     navigator .vibrate (1000);
