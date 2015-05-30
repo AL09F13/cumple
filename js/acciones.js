@@ -1,19 +1,19 @@
 //JavaScript Document
 $(document).ready(function(e) {
-//document.addEventListener("deviceready",function(){
+document.addEventListener("deviceready",function(){
 	
-	$ ('#btn_conti') .on ('tap' , function () { 
+  $ ('#btn_conti') .on ('tap' , function () { 
     navigator .vibrate (1000);
  });
 
   $ ('#calcular') .on ('tap' , function () { 
     navigator .vibrate (1000);
  });
-   $ ('#btn_inicio') .on ('tap' , function () { 
+  $ ('#btn_inicio') .on ('tap' , function () { 
     navigator .vibrate (1000);
  });
  
- $ ('#btn_comenzar') .on ('tap' , function () { 
+  $ ('#btn_comenzar') .on ('tap' , function () { 
     navigator .vibrate (1000);
  });
 	
@@ -27,7 +27,7 @@ $(document).ready(function(e) {
 $(document).ready(function(e) {
 
 	
-$('#calcular').click(function(e){
+$('#calcular').on ('tap', function(e){
 		
 		var diac;
 		diac=$('#diacumple').val();
@@ -79,7 +79,7 @@ $('#calcular').click(function(e){
 });
       
 	 
-	 $('#btn_inicio').click(function(e){
+	 $('#btn_inicio').on('tap', function(e){
 		$('#txt_nom').val('')
 		$('#diacumple').val('')
 		$('#mescumple').val('')
@@ -89,5 +89,5 @@ $('#calcular').click(function(e){
 });
 
 });//ready
-
+});
 });
